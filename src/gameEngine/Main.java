@@ -7,10 +7,12 @@ package gameEngine;
 
 import renderEngine.Loader;
 import renderEngine.Renderer;
-import renderEngine.RawModel;
+import models.RawModel;
+import models.TexturedModel;
 import renderEngine.DisplayManager;
 import org.lwjgl.opengl.Display;
 import shaders.StaticShader;
+import textures.ModelTexture;
 
 /**
  *
@@ -40,12 +42,14 @@ public class Main {
         };
         
         RawModel model = loader.loadToVAO(vertices, indices);
+        ModelTexture texture = new ModelTexture(loader.loadTexture("texture"));
+        TexturedModel texturedModel = new TexturedModel(model, texture);
         
         while(!Display.isCloseRequested()){
             //game logic
             renderer.prepare();
             shader.start();
-            renderer.render(model);
+            renderer.render(texturedModel);
             shader.stop();
             DisplayManager.updateDisplay();
         }
