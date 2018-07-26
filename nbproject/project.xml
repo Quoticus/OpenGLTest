@@ -12,6 +12,11 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>gl</word>
+            <word>projectionMatrix</word>
+            <word>textureCoordinates</word>
+            <word>textureSampler</word>
+            <word>transformationMatrix</word>
             <word>vec</word>
         </spellchecker-wordlist>
     </configuration>
