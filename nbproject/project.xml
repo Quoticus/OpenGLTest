@@ -13,11 +13,22 @@
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
             <word>gl</word>
+            <word>lightColour</word>
+            <word>lightPosition</word>
+            <word>modelTexture</word>
+            <word>nDot</word>
             <word>projectionMatrix</word>
+            <word>surfaceNormal</word>
             <word>textureCoordinates</word>
             <word>textureSampler</word>
+            <word>toLightVector</word>
             <word>transformationMatrix</word>
+            <word>unitLightVector</word>
+            <word>unitNormal</word>
             <word>vec</word>
+            <word>viewMatrix</word>
+            <word>worldPosition</word>
+            <word>xyz</word>
         </spellchecker-wordlist>
     </configuration>
 </project>
