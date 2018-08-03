@@ -29,6 +29,8 @@
             <word>shineDamper</word>
             <word>specularFactor</word>
             <word>surfaceNormal</word>
+            <word>textureColor</word>
+            <word>textureColour</word>
             <word>textureCoordinates</word>
             <word>textureSampler</word>
             <word>toCameraVector</word>
