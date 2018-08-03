@@ -2,6 +2,9 @@
 <project xmlns="http://www.netbeans.org/ns/project/1">
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
+        <buildExtensions xmlns="http://www.netbeans.org/ns/ant-build-extender/1">
+            <extension file="build-native.xml" id="j2sedeploy"/>
+        </buildExtensions>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>OpenGLTest</name>
             <source-roots>
@@ -12,19 +15,28 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>dampedFactor</word>
+            <word>finalSpecular</word>
             <word>gl</word>
             <word>lightColour</word>
+            <word>lightDirection</word>
             <word>lightPosition</word>
             <word>modelTexture</word>
             <word>nDot</word>
             <word>projectionMatrix</word>
+            <word>reflectedLight</word>
+            <word>reflectedLightDirection</word>
+            <word>shineDamper</word>
+            <word>specularFactor</word>
             <word>surfaceNormal</word>
             <word>textureCoordinates</word>
             <word>textureSampler</word>
+            <word>toCameraVector</word>
             <word>toLightVector</word>
             <word>transformationMatrix</word>
             <word>unitLightVector</word>
             <word>unitNormal</word>
+            <word>unitVectorToCamera</word>
             <word>vec</word>
             <word>viewMatrix</word>
             <word>worldPosition</word>

@@ -35,10 +35,13 @@ public class Main {
         Renderer renderer = new Renderer(shader);
         
         RawModel model = OBJLoader.loadObjModel("dragon", loader);
-        ModelTexture texture = new ModelTexture(loader.loadTexture("whiteTexture"));
-        TexturedModel staticModel = new TexturedModel(model, texture);
+        TexturedModel staticModel = new TexturedModel(model, new ModelTexture(loader.loadTexture("whiteTexture")));
+        ModelTexture texture = staticModel.getTexture();
+        texture.setShineDamper(10);
+        texture.setReflectivity(5);
+        
         Entity entity = new Entity(staticModel, new Vector3f(0,-5,-25),0, 0, 0, 1);
-        Light light = new Light(new Vector3f(0,0,-20), new Vector3f(1, 1, 1));
+        Light light = new Light(new Vector3f(0,0,-17), new Vector3f(1, 1, 1));
         Camera camera = new Camera();
         
         while(!Display.isCloseRequested()){
