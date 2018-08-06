@@ -15,6 +15,7 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>actualNormal</word>
             <word>dampedFactor</word>
             <word>finalSpecular</word>
             <word>gl</word>
@@ -39,6 +40,7 @@
             <word>unitLightVector</word>
             <word>unitNormal</word>
             <word>unitVectorToCamera</word>
+            <word>useFakeLighting</word>
             <word>vec</word>
             <word>viewMatrix</word>
             <word>worldPosition</word>
